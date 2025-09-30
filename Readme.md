@@ -50,7 +50,7 @@ Developed in **2025**, MyFTs was born from Kina SaQina's experience building com
 
 ---
 
-## 1. Overview
+## 1. Overview & Started Electron
 
 **MyFTs** is a modular **Electron CRUD framework** designed for scalability, cross-platform deployment, and global usage. It combines **Electron** for the desktop environment, **MVC architecture** for code organization, and **SQLite** (or other DBs) for lightweight database management.
 
@@ -62,6 +62,19 @@ The key objectives are:
 * Reusable components for frontend flexibility.
 
 This document explains **every folder, file, and interaction** with examples and best practices.
+
+Before starting, make sure you have run this command in the terminal.
+
+```
+npm install --save-dev electron
+```
+
+
+To get started, you can use this command
+```
+npm run dev
+```
+
 
 ---
 
@@ -310,3 +323,4 @@ This README provides **full global architecture** for Electron CRUD apps:
 
 
 ---
+
