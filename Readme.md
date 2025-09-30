@@ -1,5 +1,11 @@
 
 ---
+<!-- Logo Section -->
+<p align="center">
+   <img src="/public/Img/Electron.png" alt="Electron JS" width="150"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" alt="Node JS" width="150"/>
+</p>
+
 
 # MyFTs - Global Architecture & Folder Structure For Development Deckop apps
 
@@ -301,5 +307,6 @@ This README provides **full global architecture** for Electron CRUD apps:
 * Scalable and reusable across projects.
 
 > Following this blueprint, developers can create **robust desktop applications** that are maintainable, extendable, and globally adaptable.
+
 
 ---
