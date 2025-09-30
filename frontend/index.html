@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My FTs Notes</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background: #f4f4f4;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      .card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        padding: 20px;
+        transition: all 0.3s ease;
+        overflow: hidden;
+      }
+      .card h2 {
+        margin: 0;
+        font-size: 20px;
+      }
+      .card p {
+        margin: 10px 0;
+      }
+      .card .full {
+        display: none;
+        margin-top: 10px;
+        color: #333;
+      }
+      .btn {
+        background: #007bff;
+        color: white;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📒 Catatan Rha</h1>
+    <div class="cards">
+      <div class="card">
+        <h2>Belajar Electron</h2>
+        <p>CRUD dasar di Electron</p>
+        <button class="btn" onclick="toggleCard(this)">Learn More</button>
+        <div class="full">
+          Hari ini aku belajar gimana bikin aplikasi CRUD di Electron step by step...
+        </div>
+      </div>
+      <div class="card">
+        <h2>Belanja</h2>
+        <p>List belanjaan rumah</p>
+        <button class="btn" onclick="toggleCard(this)">Learn More</button>
+        <div class="full">
+          Telur, Beras, Kopi, Susu, Indomie...
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleCard(btn) {
+        const fullText = btn.nextElementSibling;
+        if (fullText.style.display === "block") {
+          fullText.style.display = "none";
+          btn.innerText = "Learn More";
+        } else {
+          fullText.style.display = "block";
+          btn.innerText = "Show Less";
+        }
+      }
+    </script>
+  </body>
+</html>
